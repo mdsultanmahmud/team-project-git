@@ -3,7 +3,9 @@ const email = document.getElementById("email");
 const phone = document.getElementById("phone");
 const btn = document.getElementById("btn");
 
-btn.addEventListener("click", () => {
+btn.addEventListener("click", (e) => {
+  e.preventDefault();
+  console.log("hello");
   const user = {
     name: name.value,
     email: email.value,
